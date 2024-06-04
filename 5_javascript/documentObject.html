@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var str = "我太帅了";
+      var num = 0;
+      var newStr = "";
+      var timer = null;
+      timer = setInterval(function () {
+        newStr += str[num];
+        num++;
+        document.title = newStr;
+      }, 1000);
+      setTimeout(function () {
+        clearInterval(timer);
+      }, str.length * 1000);
+    </script>
+  </head>
+  <body></body>
+</html>

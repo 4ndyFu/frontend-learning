@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .leo {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        background: red;
+      }
+
+      .leo-children {
+        width: 100px;
+        height: 100px;
+        background: green;
+        left: 50px;
+        top: 50px;
+        /* position 默认是不继承的 */
+        /* 假如没有设置 position，left top 不会生效 */
+        position: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="leo">
+      <div class="leo-children"></div>
+    </div>
+  </body>
+</html>

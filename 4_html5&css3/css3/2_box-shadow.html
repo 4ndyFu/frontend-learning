@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .leo {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px 0px;
+      }
+
+      span {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="leo"></div>
+    <div>
+      <ul>
+        <li>
+          box-shadow: <span>X轴偏移位置</span> <span>Y轴偏移位置</span>
+          <span>模糊度</span> <span>扩展</span> <span>颜色</span>,
+          <span>[inset]</span> <span>X轴偏移位置</span>
+          <span>Y轴偏移位置</span> <span>模糊度</span> <span>扩展</span>
+          <span>颜色</span>, ......
+          <ul>
+            <li>普通的阴影：向外拓展，但是不占 div 的空间</li>
+            <li>内阴影：向内拓展</li>
+          </ul>
+        </li>
+        <li>阴影可以设置无限个</li>
+        <li>阴影的层级是有先后顺序的，先写的阴影层级高</li>
+      </ul>
+    </div>
+  </body>
+</html>

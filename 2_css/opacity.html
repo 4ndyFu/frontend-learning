@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        background-color: gray;
+      }
+
+      .leo {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        opacity: 0.5;
+      }
+
+      .leo_two {
+        width: 200px;
+        height: 200px;
+        background-color: #fe868e;
+      }
+
+      .leo_three {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(27, 96, 48, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>透明并不仅仅是换了个颜色。</h2>
+      <p>
+        leo是一个 background-color 为 red，opacity 为 0.5 的 div，leo_two
+        是一个颜色为 #fe868e 的 div。
+      </p>
+      <p>
+        在 body 的 background-color
+        为默认的白色时，这两个盒子看起来是一样的；但当 body 的 background-color
+        设置成 gray 时，就能很容易的看出来区别。
+      </p>
+    </div>
+
+    <div class="leo"></div>
+    <div class="leo_two"></div>
+
+    <div>
+      <h2>background-color 与 opacity 的联动</h2>
+      <p>rgb(27, 96, 48, 0.5)，最后一位即透明度</p>
+    </div>
+
+    <div class="leo_three"></div>
+  </body>
+</html>

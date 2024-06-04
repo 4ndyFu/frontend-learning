@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .leo-one {
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        border-radius: 10px;
+      }
+
+      .content span {
+        border: 1px solid;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>border-radius 圆角样式</h2>
+    <div class="leo-one"></div>
+    <div class="content">
+      <ul>
+        <li>
+          作用
+          <ul>
+            <li>
+              把边框四角的边长为 1/2 border-radius 数值的正方形，变成直径为
+              border-radius 数值的 1/4 圆
+            </li>
+          </ul>
+        </li>
+        <li>
+          书写规则
+          <ul>
+            <li>有 1 个值，<span>左上 左下 右上 右下</span></li>
+            <li>有 2 个值，<span>左上 右下</span>，<span>左下 右上</span></li>
+            <li>
+              有 3 个值，<span>左上</span>，<span>左下 右上</span>，<span
+                >右下</span
+              >
+            </li>
+            <li>
+              有 4
+              个值，<span>左上</span>，<span>右上</span>，<span>右下</span>，<span
+                >左下</span
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          也可以用这种直接指定某个边角的方式
+          <ul>
+            <li>border-top-left-radius</li>
+            <li>border-top-right-radius</li>
+            <li>border-bottom-left-radius</li>
+            <li>border-bottom-right-radius</li>
+          </ul>
+        </li>
+        <li>
+          在 div 是一个 height=width 的前提下
+          <ul>
+            <li>假如 border-radius 给的特别大，会变成一个圆</li>
+            <li>
+              其实，只要按 像素/比例 指定为 width / height 的一半，就会变成圆
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

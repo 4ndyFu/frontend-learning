@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .leo {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        background-image: url(kebab.jpg);
+        color: white;
+      }
+
+      .leo_two {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        background-image: url(kebab_small.png);
+        color: white;
+      }
+
+      .leo_three {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-image: url(kebab_small.png);
+        color: white;
+        background-repeat: no-repeat;
+      }
+
+      .leo_x {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-image: url(kebab_small.png);
+        color: white;
+        background-repeat: repeat-x;
+      }
+
+      .leo_y {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-image: url(kebab_small.png);
+        color: white;
+        background-repeat: repeat-y;
+      }
+
+      /* 调整大小 */
+      .leo_four {
+        width: 300px;
+        height: 300px;
+        border: 10px solid red;
+        background-image: url(kebab_small.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* 调整位置 */
+      .leo_five {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background-image: url(kebab_small.png);
+        background-repeat: no-repeat;
+        background-position: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>给元素添加图片背景</h2>
+    <div class="leo">picture of kebab</div>
+    <div>
+      <p>
+        可以看出来，跟下面的原图相比，上面作为 div 背景的图片是被按照 div
+        盒子大小而被裁减了的。
+      </p>
+      <img src="kebab.jpg" />
+    </div>
+    <p>当图片的尺寸比 div 的盒子小时，图片会自动平铺</p>
+    <div class="leo_two"></div>
+
+    <p>取消平铺</p>
+    <div class="leo_three"></div>
+
+    <p>
+      平铺的原理，是在 x 轴和 y 轴重复，因此也有两个属性来控制在 x、y
+      轴的重复行为，background-repeat: repeat-x/repeat-y
+    </p>
+    <div class="leo_x"></div>
+    <div class="leo_y"></div>
+
+    <h2>背景样式的重复方式可以继承吗？</h2>
+
+    <h2>设置背景图片大小</h2>
+
+    <div class="leo_four"></div>
+
+    <h2>设置背景图片位置</h2>
+
+    <div class="leo_five"></div>
+  </body>
+</html>
